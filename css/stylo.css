@@ -1,6 +1,7 @@
+/*Tags e divs de todas as páginas*/
 html {
     min-height: 100%;
-    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -9,23 +10,65 @@ body {
 
 header {
     background-color: rgb(17, 1, 1);
-    padding: 5px;
+    padding: 10px;
+    margin: -8px;
     height: 100px;
-    box-shadow: black 10px;
+    display: flex;
 }
 
-.logo {
-    align-content: center;
-    border: 2px solid white;
-    max-width: 80px;
+footer {
+    background-color: rgb(17, 1, 1);
+    padding: 10px;
+    margin: -8px;
+    height: 150px;
+    display: flex;
+}
+
+#logo {
     border-radius: 30px;
-    margin: 40px;
-    margin-left: 200px;
-    padding: 15px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 250px;
+    text-align: center;
 }
 
+#logo img {
+    padding-top: 10px;
+    height: 80px;
+}
+
+.menus {
+    padding-top: 50px;
+    padding-left: 60px;
+}
+
+.buttons {
+    background: linear-gradient(rgb(90, 0, 0), rgb(120, 0, 0));
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    display: inline-block;
+    margin: -2.5px;
+    text-decoration: none;
+    transition: all 0.1s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.buttons:hover {
+    background: linear-gradient(rgb(50, 0, 0), rgb(80, 0, 0));
+}
+
+.buttons:active {
+    animation: blink 0.1s;
+}
+
+@keyframes blink {
+    0%, 100% { background: linear-gradient(rgb(90, 0, 0), rgb(120, 0, 0)); }
+    50% { background: linear-gradient(rgb(180, 0, 0), rgb(210, 0, 0)); }
+}
+
+/*Página index.html*/
 .banner {
     margin-top: 30px;
 }
