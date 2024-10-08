@@ -4,7 +4,14 @@ html {
 }
 
 body {
-    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 221), rgb(255, 255, 173));
+    background: linear-gradient(rgb(35, 1, 1), rgb(75, 3, 3), rgb(116, 5, 5));
+}
+
+header {
+    background-color: rgb(17, 1, 1);
+    padding: 5px;
+    height: 100px;
+    box-shadow: black 10px;
 }
 
 .logo {
@@ -13,13 +20,17 @@ body {
     max-width: 80px;
     border-radius: 30px;
     margin: 40px;
-    margin-left: 350px;
+    margin-left: 200px;
     padding: 15px;
     padding-top: 1px;
     padding-bottom: 1px;
 }
 
-.logo img {
-    max-width: 80px;
-    filter: contrast(0%) brightness(200%);
+.banner {
+    margin-top: 30px;
+}
+
+.banner img{
+    align-self: center;
+    max-width: 100%;
 }
