@@ -1,93 +1,91 @@
-
-
-
+/* Container do carrossel na página Index*/
 .carousel-container {
-    overflow: hidden; 
-    width: 80%; 
-    margin: 50px auto; 
+    overflow: hidden;
+    width: 80%;
+    margin: 50px auto;
     border-radius: 15px;
-    background-color: rgb(17, 1, 1);; 
+    background-color: rgb(17, 1, 1);
+    position: relative;
 }
-
 
 .carousel {
-    display: flex; 
-    overflow-x: scroll; 
-    scroll-snap-type: x mandatory; 
-    scroll-behavior: smooth; 
+    display: flex;
+    animation: scroll 15s infinite; 
 }
-
 
 .carousel-item {
-
-    scroll-snap-align: center; 
-    min-width: 100%; 
-    display: flex; 
-    align-items: center; 
+    min-width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: space-around;
     padding: 20px;
-    box-sizing: border-box; 
-}
-
-.logo_jogo{
     box-sizing: border-box;
-    width: 50%;
-
 }
 
 .logo_jogo img {
-    width: 95%; 
+    width: 95%;
     height: auto;
     border-radius: 10px;
     margin: 8px;
 }
 
-
 .info {
-    box-sizing: border-box;
-    align-items: center;
-    width: 50%; 
+    width: 50%;
     margin-left: 20px;
 }
 
-
-.info p {
-    margin-bottom: 5px;    
-}
-
-
 .info h2 {
-    font-size: 30px; 
-    margin-bottom: 10px; 
-    font-weight: bold; 
-    color: #aaa; 
-    
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #aaa;
 }
 
-.lancamento{
-    color: #aaa; 
-
+.lancamento, .tags {
+    color: #aaa;
 }
 
- .positive {
+.positive {
     color: #32CD32;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
-
-.tags {
-    font-size: 14px; 
-    color: #aaa; 
-    
+.price {
+    color: #f3f3e6;
+    font-weight: bold;
+    font-size: 25px;
 }
 
-
-.carousel::-webkit-scrollbar {
-    display: none; 
+/* Animação do carrossel automático */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0); /* Parado por 5 segundos (25% de 28s) */
+    }
+    30% {
+        transform: translateX(-100%); /* Transição de 2 segundos (10% de 28s) */
+    }
+    55% {
+        transform: translateX(-100%); /* Parado por 5 segundos (25% de 28s) */
+    }
+    60% {
+        transform: translateX(-200%); /* Transição de 2 segundos (10% de 28s) */
+    }
+    85% {
+        transform: translateX(-200%); /* Parado por 5 segundos (25% de 28s) */
+    }
+    100% {
+        transform: translateX(0); /* Transição de 2 segundos (último 10%) */
+    }
 }
-
 
 .carousel {
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
+    display: flex;
+    animation: scroll 28s infinite;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
 }
