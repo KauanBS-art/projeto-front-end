@@ -6,6 +6,7 @@ html {
 
 body {
     background: linear-gradient(rgb(35, 1, 1), rgb(75, 3, 3), rgb(116, 5, 5));
+    text-shadow: black 1.5px 1.5px 1.5px;
 }
 
 
@@ -193,6 +194,7 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     line-height: 5px;
+    text-shadow: black 4.5px 4.5px 4.5px;
 }
 
 .texto_inicio b{
