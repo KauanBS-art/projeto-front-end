@@ -1,63 +1,262 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sobre</title>
-        <link rel="stylesheet" href="css/stylo.css">
-        <link rel="icon" href="imagens/logo_site.png" type="image/png">
-    </head>
-    <body>
-        <header>
-            <div id="logo">
-                <img src="imagens/logo_site.png">
-            </div>
-            <nav>
-                <div class="menus">
-                    <a href="index.html" class="buttons">INICIO</a>
-                    <a href="#LANÇAMENTOS" class="buttons">LANÇAMENTOS</a>
-                    <a href="#PROMOÇÕES" class="buttons">PROMOÇÕES</a>
-                    <a href="sobre.html" class="buttons">SOBRE</a>
-                    <a href="#SUPORTE" class="buttons">SUPORTE</a>
-                </div>
-            </nav>
-            <div id="search-container">
-                <input type="text" id="search" placeholder="Pesquisar...">
-                <button id="search-btn"><img src="imagens/lupa_icon.png"></button>
-            </div>
-        </header>
-        <main>
-            <section class="banner_sobre">
-                <div class="banner_texto">
-                    <h1>Você está na GameXtore!</h1>
-                    <p>Sua loja digital para todos os jogos que você ama. Descubra, compre e aproveite sua biblioteca de jogos!</p>
-                    <h2>Compre os jogos novos em promoção ou jogos antigos por um preço super acessível!</h2>
-                </div>
-                <div class="banner_img">
-                     <img src="imagens/banner_sobre.png" alt="Banner da GameXtore">
-                </div>
-            </section>
-            <section class="texto_sobre">
-                <div class="titulos_sobre">
-                    <h1>Navegue por tudo!</h1>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="rodape">
-                <hr class="linha">
-                <p><i>@2024 XGameCompany.</i> A <b> GameXtore </b> possui todos os direitos autorais imaginários reservados. Os produtos e marcas utilizados neste site não possuem fins comerciais ou direitos </p>
-                <p>de reprodução, isso é apenas um trabalho do primeiro período da Unitins, não copie ou torne comercial ou lucrativo de qualquer forma. Agradecimentos Genival e Kauan.</p>
-                <div id="rodape_contatos">
-                    <a href="#REEMBOLSOS" class="rodape_links"> Reembolsos </a> <span> | </span>
-                    <a href="#XGAMECOMPANY" class="rodape_links"> XGameCompany </a> <span> | </span>
-                    <a href="#INSTAGRAM" class="rodape_links"> Instagram </a> <span> | </span>
-                    <a href="#LICENÇA" class="rodape_links"> Licença </a> <span> | </span>
-                    <a href="#POLITICA" class="rodape_links"> Política de privacidade </a> <span> | </span>
-                    <a href="#PARCEIROS" class="rodape_links"> Parceiros </a>
-                </div>
-                <hr class="linha">
-            </div>
-        </footer>
-    </body>
-</html>
+/*Tags e divs de todas as páginas*/
+html {
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgb(35, 1, 1), rgb(75, 3, 3), rgb(116, 5, 5));
+}
+
+
+header {
+    background-color: rgb(17, 1, 1);
+    padding: 10px;
+    margin: -8px;
+    height: 100px;
+    display: flex;
+}
+
+
+footer {
+    background-color: rgb(17, 1, 1);
+    padding: 20px;
+    margin: -8px;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape {
+    color: #ffffff;
+    font-size: 11px;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape b{
+    line-height: 3px;
+    font-size: 15px;
+}
+
+.rodape p{
+    line-height: 3px;
+}
+
+.rodape i{
+    line-height: 3px;
+    color: #cacaca;
+}
+
+.rodape_links {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff
+}
+
+.rodape_links:hover {
+    color: #cacaca;
+}
+
+.linha {
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+#logo {
+    border-radius: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 250px;
+    text-align: center;
+}
+
+#logo img {
+    padding-top: 10px;
+    height: 80px;
+}
+
+
+.menus {
+    padding-top: 50px;
+    padding-left: 60px;
+}
+
+/*botões do menu*/
+.buttons {
+    background: linear-gradient(rgb(90, 0, 0), rgb(120, 0, 0));
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    display: inline-block;
+    margin: -3px;
+    text-decoration: none;
+    transition: all 0.1s ease;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+}
+
+.buttons:hover {
+    background: linear-gradient(rgb(50, 0, 0), rgb(80, 0, 0));
+}
+
+.buttons:active {
+    animation: blink 0.1s;
+}
+
+@keyframes blink {
+    0%, 100% { background: linear-gradient(rgb(90, 0, 0), rgb(120, 0, 0)); }
+    50% { background: linear-gradient(rgb(180, 0, 0), rgb(210, 0, 0)); }
+}
+
+
+/*Barra de busca e botão*/
+#search-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 50px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#search {
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid rgb(50, 0, 0);
+    background-color: rgb(60, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin: 5px;
+    width: 200px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#search:focus {
+    background-color: rgb(90, 0, 0);
+    outline: none;
+    color: #ffffff;
+}
+
+#search-btn {
+    background: linear-gradient(rgb(80, 0, 0), rgb(130, 0, 0));
+    border: none; 
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#search-btn img{
+    width: 14px;
+    filter: invert(1);
+}
+
+#search-btn:hover {
+    background: linear-gradient(rgb(130, 0, 0), rgb(180, 0, 0));
+}
+
+
+/*Página Index*/
+.banner {
+    max-height: 30%;
+    margin-top: 30px;
+}
+
+.banner .video-background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+
+#texto_apresentacao {
+    background-color: rgb(35, 0, 0);
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    padding: 30px;
+    border: 3px solid rgb(20, 0, 0);
+    border-radius: 8px;
+}
+
+#texto_apresentacao img {
+    border: none;
+    width: 500px;
+}
+
+.texto_inicio {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    line-height: 5px;
+}
+
+.texto_inicio b{
+    font-size: 45px;
+    line-height: 45px;
+}
+
+
+/*Página Sobre*/
+.banner_sobre {
+    width: 80%;
+    height:auto;
+    size: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    padding: 10px 20px 50px 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banner_img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+.banner_img img{
+    width: 400px;
+    margin-top: 90px;
+    margin-left: 40px;
+}
+
+.banner_texto h1 {
+    margin-top: 90px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.banner_texto h2 {
+    margin: 20px;
+}
+
+.banner_texto p {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.banner_texto {
+    width: 60%;
+    color: white;
+    align-items:center;
+}
+
+
+.texto_sobre {
+    color: #ffffff;
+    text-align: center;
+}
+
+.titulos_sobre h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
