@@ -210,6 +210,7 @@ footer {
 .banner_sobre {
     width: 80%;
     height:auto;
+    box-size:border-box;
     display: flex;
     flex-direction: row-reverse;
     text-align: center;
