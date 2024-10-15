@@ -216,11 +216,15 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.banner_sobre img {
-    width: 500px;
-    margin-top: -50px;
-    margin-right: 350px;
+.banner_img {
+    width: 40%;
 }
+.banner_img{
+    width:100%;
+    height: auto;
+    object-fit:cover;
+}
+
 
 .banner_sobre h1 {
     margin-top: 90px;
@@ -238,7 +242,7 @@ footer {
 }
 
 .banner_texto {
-    margin-left: 800px;
+    width: 60%;
     padding-top: 50px;
 }
 
