@@ -208,10 +208,11 @@ footer {
 
 /*Página Sobre*/
 .banner_sobre {
+    width: 80%;
+    height:auto;
     display: flex;
     flex-direction: row-reverse;
     text-align: center;
-    color: white;
     padding: 100px 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -226,24 +227,26 @@ footer {
 }
 
 
-.banner_sobre h1 {
+.banner_texto h1 {
     margin-top: 90px;
     font-size: 40px;
     font-weight: bold;
 }
 
-.banner_sobre h2 {
+.banner_texto h2 {
     margin: 20px;
 }
 
-.banner_sobre p {
+.banner_texto p {
     font-size: 18px;
     margin: 10px;
 }
 
 .banner_texto {
     width: 60%;
-    padding-top: 50px;
+    color: white;
+    aling-items:center;
+   
 }
 
 
