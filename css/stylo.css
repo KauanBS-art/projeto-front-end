@@ -209,7 +209,7 @@ footer {
 /*Página Sobre*/
 .banner_sobre {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     text-align: center;
     color: white;
     padding: 100px 20px;
@@ -238,8 +238,8 @@ footer {
 }
 
 .banner_texto {
-    position: absolute;
     margin-left: 800px;
     padding-top: 50px;
-    transform: translate(-50%, -50%);
 }
+
+
