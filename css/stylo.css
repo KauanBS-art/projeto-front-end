@@ -9,8 +9,7 @@ body {
 }
 
 
-
-
+/*Formatação de todas as páginas*/
 header {
     background-color: rgb(17, 1, 1);
     padding: 10px;
@@ -88,7 +87,7 @@ footer {
 
 .menus {
     padding-top: 50px;
-    padding-left: 60px;
+    padding-left: 40px;
 }
 
 /*botões do menu*/
@@ -100,10 +99,10 @@ footer {
     display: inline-block;
     margin: -3px;
     text-decoration: none;
-    transition: all 0.1s ease;
     cursor: pointer;
     border: none;
     border-radius: 2px;
+    transition: background-color 0.3s ease;
 }
 
 .buttons:hover {
@@ -117,6 +116,34 @@ footer {
 @keyframes blink {
     0%, 100% { background: linear-gradient(rgb(90, 0, 0), rgb(120, 0, 0)); }
     50% { background: linear-gradient(rgb(180, 0, 0), rgb(210, 0, 0)); }
+}
+
+
+/*Botão de Login*/
+.login_menu {
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid rgb(153, 36, 36);
+    border-radius: 5px;
+    width: auto;
+    height: 20px;
+    margin-top: 34px;
+    margin-left: 30px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(181, 20, 20);
+    transition: background-color 0.3s ease;
+}
+
+.login_menu a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.login_menu:hover {
+    border: 2px solid rgb(114, 28, 28);
+    background-color: rgb(149, 16, 16);
 }
 
 
@@ -208,6 +235,36 @@ footer {
 }
 
 
+/*Botões de categoria*/
+.categorias {
+    font-size: 20px;
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 10px 50px 10px;
+}
+
+.categorias p{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0px 30px 0px;
+}
+
+.cat_button {
+    color: #ffffff;
+    background-color: rgb(209, 36, 36);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cat_button:hover {
+    background-color: rgb(244, 98, 98);
+}
+
 /*Página Sobre*/
 .banner_sobre {
     width: 80%;
@@ -257,15 +314,75 @@ footer {
 .texto_sobre {
     color: #ffffff;
     text-align: center;
+    margin: auto;
+    justify-content: center;
 }
 
 .titulos_sobre h1{
+    background-color: rgb(141, 45, 45);
+    max-width: 40%;
+    margin: auto;
+    padding: 8px;
+    border-radius: 10px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
+.descricoes_sobre {
+    align-content: center;
+    margin: 30px auto;
+    max-width: 70%;
+    font-size: 20px;
+    background-color: #900;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.finalizacao_sobre {
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+}
+
+.texto_sobre_imagem p{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 3px 5px #000000;
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.texto_sobre_imagem h1{
+    font-size: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 3px 5px 7px #000000;
+    position: absolute;
+    text-align: center;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.finalizacao_sobre img{
+    padding: 4px;
+    max-width: 100%;
+}
+
+/*Página Login*/
+
+.texto_login {
+    font-size: 60px;
+    text-align: center;
+    padding: 30px;
+    color: #ffffff;
+    font-weight: bold;
+}
 
 /* Centralização da box_login */
-
 #login {
     display: flex;
     justify-content: center;
@@ -283,6 +400,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para um efeito 3D */
     border-radius: 8px; /* Canto arredondado */
     padding: 30px;
+    margin: 50px;
     width: 500px; /* Tamanho fixo */
 }
 
@@ -316,4 +434,37 @@ footer {
 
 .enviar:hover {
     background: linear-gradient(rgb(130, 0, 0), rgb(180, 0, 0)); /* Cor mais clara no hover */
+}
+
+
+/*Página ERROR*/
+
+.error {
+    color: #ffffff;
+    padding: 50px 50px 80px 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+#img_erro{
+    width: 100px;
+    display: flex;
+    transform: translate(550%, 30%);
+    filter: invert(100%);
+}
+
+#img_erro2 {
+    width: 500px;
+    justify-content: center;
+    text-align: center;
+}
+
+.error h1 {
+    display: absolute;
+    padding: 20px;
+    font-size: 70px;
+}
+
+.error h3 {
+    font-size: 20px;
 }
