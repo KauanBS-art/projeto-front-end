@@ -9,6 +9,8 @@ body {
 }
 
 
+
+
 header {
     background-color: rgb(17, 1, 1);
     padding: 10px;
@@ -259,4 +261,59 @@ footer {
 
 .titulos_sobre h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Centralização da box_login */
+
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Garante que ocupa 100% da altura da viewport */
+}
+
+.box_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(17, 1, 1); /* Cor de fundo mais suave */
+    border: 1px solid #ccc; /* Borda leve */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para um efeito 3D */
+    border-radius: 8px; /* Canto arredondado */
+    padding: 30px;
+    width: 500px; /* Tamanho fixo */
+}
+
+.campo_info {
+    margin-bottom: 15px; /* Espaço entre os campos */
+    padding: 12px;
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 5px;
+    width: 100%; /* Ocupar 100% da largura da box_login */
+    font-size: 16px; /* Tamanho da fonte */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Efeito de profundidade no campo */
+}
+
+.campo_info:focus {
+    outline: none; /* Remove a borda padrão ao focar */
+    border-color: #900; /* Cor da borda ao focar */
+}
+
+.enviar {
+    width: 100%; /* Ocupar 100% da largura da box_login */
+    padding: 12px;
+    background: linear-gradient(rgb(90, 0, 0), rgb(120, 0, 0)); /* Gradiente de fundo */
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transição suave para o hover */
+}
+
+.enviar:hover {
+    background: linear-gradient(rgb(130, 0, 0), rgb(180, 0, 0)); /* Cor mais clara no hover */
 }
