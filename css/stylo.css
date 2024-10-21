@@ -447,7 +447,8 @@ footer {
 }
 
 /*css para pagian de erros*/
-#erro{
+#error{
+    margin-top: 30px;
     align-items: center;
     text-align: center;
     min-height: 80vh;
