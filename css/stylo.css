@@ -272,7 +272,7 @@ footer {
     margin: auto;
     padding: 8px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    
 }
 
 .descricoes_sobre {
@@ -282,7 +282,7 @@ footer {
     font-size: 20px;
     border-radius: 10px;
     margin-bottom: 60px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    
 }
 
 .finalizacao_sobre {
