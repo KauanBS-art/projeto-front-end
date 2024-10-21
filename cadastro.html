@@ -27,22 +27,36 @@
             </div>
         </header>
         <main>
-            <section class="login_cadastro">
-                <form action="erro.html">
-                <div class="box_login">
-                    <div class="intro_login">
-                    <P ><h1>ENTRE</h1> E aproveite jogos exclusivos</P>
+         
+                <section class="login_cadastro">
+                    <div class="box_criar_conta">
+                        <h1>Crie sua conta</h1>
+                        <p>e tenha acesso a promoções incríveis!</p>
+                        <form action="erro.html">
+                        <input type="text" class="campo_info" placeholder="Nome Completo" maxlength="50">
+                        <input type="text" class="campo_info" placeholder="CPF" maxlength="11">
+                        <input type="text" class="campo_info" placeholder="Data de nascimento">
+                        <input type="email" class="campo_info" placeholder="E-mail" maxlength="50">
+                        <input type="password" class="campo_info" placeholder="Senha" maxlength="16">
+                        <input type="password" class="campo_info" placeholder="Confirme sua senha" maxlength="16">
+            
+            
+                        <div class="checkbox_group">
+                            <input type="checkbox" id="promocoes" name="promocoes">
+                            <label for="promocoes">Quero receber promoções por e-mail.</label>
+                        </div>
+            
+                        <div class="checkbox_group">
+                            <input type="checkbox" id="termos" name="termos">
+                            <label for="termos">Eu li e concordo com os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a>. A GameXtore não coletam intencionalmente dados de seus usuarios.</label>
+                        </div>
+            
+                        <input type="submit" value="CRIAR CONTA" class="botao_logar">
+                        </form>
+            
+                        <p>Já tem conta? <a href="login.html" class="link">Entrar na conta</a></p>
                     </div>
-                    <input type="text" class="campo_info"  placeholder="Nome de usuario ou email" maxlength="50">
-                    <input type="password" class="campo_info" placeholder="Senha" maxlength="16">
-                    <a href="#" id="esqueceu_senha">Esqueceu a Senha?</a>
-                    <input type="submit" name="enviar" value="LOGAR" class="botao_logar">
-                    <p>Nao tem conta?</p>
-                    <a href="cadastro.html" class="link">Criar Uma Conta</a>
-                </div>
-                </form>
-            </section>
-           
+                </section>
 
         </main>
         <footer>

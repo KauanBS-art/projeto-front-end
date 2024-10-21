@@ -98,12 +98,12 @@ footer {
     font-weight: bold;
     padding: 8px;
     display: inline-block;
-    margin: -3px;
+    margin-right: 2px;
     text-decoration: none;
     transition: all 0.1s ease;
     cursor: pointer;
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .buttons:hover {
@@ -264,56 +264,192 @@ footer {
 }
 
 
-/* Centralização da box_login */
-
-#login {
+/*pagina de login*/
+/* Centralização da seção de login/cadastro */
+.login_cadastro {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh; /* Garante que ocupa 100% da altura da viewport */
+    min-height: 80vh;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(80, 0, 0, 0.9); 
 }
 
 .box_login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(17, 1, 1); /* Cor de fundo mais suave */
-    border: 1px solid #ccc; /* Borda leve */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para um efeito 3D */
-    border-radius: 8px; /* Canto arredondado */
-    padding: 30px;
-    width: 500px; /* Tamanho fixo */
+    background-color: #2e2e2e; 
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff; 
 }
 
-.campo_info {
-    margin-bottom: 15px; /* Espaço entre os campos */
-    padding: 12px;
-    border: 1px solid #ccc; /* Borda leve */
-    border-radius: 5px;
-    width: 100%; /* Ocupar 100% da largura da box_login */
-    font-size: 16px; /* Tamanho da fonte */
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Efeito de profundidade no campo */
+/* Título da página */
+.box_login h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.campo_info:focus {
-    outline: none; /* Remove a borda padrão ao focar */
-    border-color: #900; /* Cor da borda ao focar */
+/* Texto abaixo do título */
+.box_login p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #bbb; 
 }
 
-.enviar {
-    width: 100%; /* Ocupar 100% da largura da box_login */
-    padding: 12px;
-    background: linear-gradient(rgb(90, 0, 0), rgb(120, 0, 0)); /* Gradiente de fundo */
-    color: white;
-    border-radius: 5px;
+/* Campos de input */
+.campo_login {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
     border: none;
-    cursor: pointer;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
     font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease; /* Transição suave para o hover */
 }
 
-.enviar:hover {
-    background: linear-gradient(rgb(130, 0, 0), rgb(180, 0, 0)); /* Cor mais clara no hover */
+.campo_login::placeholder {
+    color: #bbb; /* Cor do placeholder */
+}
+
+
+/* Link "Esqueceu a Senha" */
+#esqueceu_senha {
+    color: #ffffff; 
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+#esqueceu_senha:hover {
+    text-decoration: underline;/*sublinha o link ao passa o mouse*/
+}
+
+/* Botão de login (pagian de login/cadastro) */
+.botao_logar {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8b0000; 
+    color: #ffffff; 
+    font-size: 16px;
+    cursor: pointer; /*muda a forma do curso quando passa o mouse encima do link*/
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.botao_logar:hover {
+    background-color: #a00000; /* Tom mais claro de vermelho escuro no botão quando pasar o mouse */
+}
+
+/* Texto "Não tem conta?" */
+.box_login p {
+    margin: 20px 0 10px;
+    color: #ffffff; 
+}
+
+/* Link "Criar uma conta" (pagina de login/cadastro)*/
+.link {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;/*mostra um sublinhado ao passar o mouse no link*/
+}
+
+/*pagina de cadastro*/
+/* Caixa de criação de conta */
+.box_criar_conta {
+    background-color: #2e2e2e; 
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff; /* Cor das fontes */
+}
+
+/* Título da página */
+.box_criar_conta h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Texto abaixo do título */
+.box_criar_conta p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #bbb; 
+}
+
+/* Campos de input */
+.campo_info {
+    width: calc(100% - 20px); /* Ajuste para considerar padding */
+    padding: 15px;
+    margin: 10px 0; 
+    border: none;
+    border-radius: 5px;
+    background-color: #1c1f25; 
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+.campo_info::placeholder {
+    color: #bbb; /* Cor do placeholder */
+}
+
+/* Seção de validação de dados */
+.validacao_info {
+    text-align: left;
+    font-size: 12px;
+    color: #bbb; /* Cor do texto de validação */
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #1c1f25; /* Fundo da validação */
+    border: 1px solid #333; /* Borda da validação */
+    border-radius: 5px;
+}
+
+/* grupo de Checkbox  */
+.checkbox_group {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.checkbox_group input {
+    margin-right: 10px;
+}
+
+.checkbox_group label {
+    color: #bbb; /* Cor das labels */
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Links */
+.checkbox_group a {
+    color: #00e676; /* Cor dos links */
+    text-decoration: none;
+}
+
+.checkbox_group a:hover {
+    text-decoration: underline; /* Efeito hover para os links */
+}
+
+/*css para pagian de erros*/
+#erro{
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+    font-size: 25px;
 }
