@@ -284,6 +284,7 @@ footer {
     margin-bottom: 60px;
     text-align:center;
     
+    
 }
 
 .finalizacao_sobre {
@@ -296,8 +297,11 @@ footer {
     display:flex;
     flex-direction:row;
     text-align:center;
+   
+}
 
-    
+#img_sobre{
+    max-width: 100%;
 }
 
 
