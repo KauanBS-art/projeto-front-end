@@ -277,8 +277,8 @@ footer {
 
 .descricoes_sobre {
     align-content: center;
-    margin: 30px auto;
-    max-width: 70%;
+    margin: 30px;
+    max-width: 30%;
     font-size: 20px;
     border-radius: 10px;
     margin-bottom: 60px;
