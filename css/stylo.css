@@ -8,9 +8,6 @@ body {
     background: linear-gradient(rgb(35, 1, 1), rgb(75, 3, 3), rgb(116, 5, 5));
 }
 
-
-
-
 header {
     background-color: rgb(17, 1, 1);
     padding: 10px;
@@ -71,7 +68,7 @@ footer {
     margin-bottom: 20px;
 }
 
-
+/*Imagem da logo*/
 #logo {
     border-radius: 30px;
     padding-right: 10px;
