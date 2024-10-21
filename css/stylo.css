@@ -291,6 +291,14 @@ footer {
     display: inline-block;
 }
 
+#box_coluna{
+    display:flex;
+    flex-direction:row;
+    text-align:justify;
+
+    
+}
+
 
 
 /*pagina de login*/
