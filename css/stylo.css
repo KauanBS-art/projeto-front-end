@@ -181,33 +181,6 @@ footer {
 }
 
 
-#texto_apresentacao {
-    background-color: rgb(35, 0, 0);
-    color: #ffffff;
-    text-align: center;
-    margin: 20px 0px 0px 0px;
-    padding: 30px;
-    border: 3px solid rgb(20, 0, 0);
-    border-radius: 8px;
-}
-
-#texto_apresentacao img {
-    border: none;
-    width: 500px;
-}
-
-.texto_inicio {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
-    line-height: 5px;
-}
-
-.texto_inicio b{
-    font-size: 45px;
-    line-height: 45px;
-}
-
-
 /*Página Sobre*/
 .banner_sobre {
     width: 80%;
@@ -240,7 +213,7 @@ footer {
 }
 
 .banner_texto h2 {
-    margin: 20px;
+    margin: 21px;
 }
 
 .banner_texto p {
@@ -262,6 +235,40 @@ footer {
 
 .titulos_sobre h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.texto_sobre {
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.titulos_sobre h1{
+    background-color: rgb(141, 45, 45);
+    max-width: 40%;
+    margin: auto;
+    padding: 8px;
+    border-radius: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.descricoes_sobre {
+    align-content: center;
+    margin: 30px auto;
+    max-width: 70%;
+    font-size: 20px;
+    background-color: #900;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.finalizacao_sobre {
+    justify-content: center;
+    position: relative;
+    display: inline-block;
 }
 
 
