@@ -268,11 +268,9 @@ footer {
 }
 
 .titulos_sobre h1{
-    background-color: rgb(141, 45, 45);
     max-width: 40%;
     margin: auto;
     padding: 8px;
-    border-radius: 10px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
@@ -282,7 +280,6 @@ footer {
     margin: 30px auto;
     max-width: 70%;
     font-size: 20px;
-    background-color: #900;
     border-radius: 10px;
     margin-bottom: 60px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
